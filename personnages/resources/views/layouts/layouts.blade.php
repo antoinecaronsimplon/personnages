@@ -8,11 +8,11 @@
     <title>Personnages</title>
 </head>
 <body>
-@foreach ($character as $value)
-    <span>{{ $value->Name }}</span>
-@endforeach
     @include('header')
-    @yield('content')
+    <main>
+        @yield('listpage')
+        @yield('viewpage')
+    </main>
     @include('footer')
 </body>
 </html>

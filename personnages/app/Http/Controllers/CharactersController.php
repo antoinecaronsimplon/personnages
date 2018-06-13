@@ -10,6 +10,13 @@ class CharactersController extends Controller
 
         $character = Character::index();
  
-        return view ('layouts', ['character' => $character]);
+        return view ('listpage', ['character' => $character]);
+    }
+
+    public function viewpage(){
+
+        $character = Character::index();
+ 
+        return view ('viewpage', ['character' => $character]);
     }
 }

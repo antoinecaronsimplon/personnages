@@ -1,28 +1,26 @@
-@extends('layouts')
+@extends('layouts.layouts')
 
-@section('content')
-<main>
-    <div class="profil">
-        <img src="" alt="Profil">
-        <span>nom</span>
-        <span>job</span>
-        <div class="profil-border"></div>
-    </div>
+@section('viewpage')
+<div class="profil">
+    <img src="" alt="Profil">
+    <span>nom</span>
+    <span>job</span>
+    <div class="profil-border"></div>
+</div>
+<div>
+    <p>biography</p>
+</div>
+<div>
     <div>
-        <p>biography</p>
-    </div>
-    <div>
+        <span>address</span>
         <div>
-            <span>address</span>
-            <div>
-                <span>postal code</span>
-                <span>town</span>
-            </div>
-        </div>
-        <div>
-            <span>mail</span>
-            <span>phone</span>
+            <span>postal code</span>
+            <span>town</span>
         </div>
     </div>
-</main>
+    <div>
+        <span>mail</span>
+        <span>phone</span>
+    </div>
+</div>
 @stop

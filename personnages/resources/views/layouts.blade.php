@@ -8,6 +8,9 @@
     <title>Personnages</title>
 </head>
 <body>
+@foreach ($character as $value)
+    <span>{{ $value->Name }}</span>
+@endforeach
     @include('header')
     @yield('content')
     @include('footer')

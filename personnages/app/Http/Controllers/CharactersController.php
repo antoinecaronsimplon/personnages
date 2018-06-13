@@ -1,15 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Character;
 use Illuminate\Http\Request;
 
 class CharactersController extends Controller
 {
     public function index(){
 
-        $character = \App\Persons::all();
+        $character = Character::index();
  
-        return view ('characters', ['character' => $character]);
+        return view ('layouts', ['character' => $character]);
     }
 }

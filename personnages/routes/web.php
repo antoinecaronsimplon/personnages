@@ -19,6 +19,8 @@ Route::get('/layouts', function () {
     return view('layouts');
 });
 
+Route::get('/', 'CharactersController@index');
+
 // Route::get('/header', function () {
 //     return view('header');
 // });
